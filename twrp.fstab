@@ -18,5 +18,5 @@
 /data		            ext4		/dev/block/mmcblk0p9     flags=display="Data";backup=1;wipeingui;wipeduringfactoryreset;length=-16384
 /preloader          emmc    /dev/preloader           flags=display="Preloader";backup=1
 
-/sdcard 	          vfat		/dev/block/mmcblk0p9     flags=display="Phone Storage";storage;wipeingui;backup=0
+#/sdcard 	          vfat		/dev/block/mmcblk0p9     flags=display="Phone Storage";storage;wipeingui;backup=0
 /external_sd        auto	  /dev/block/mmcblk1p1     flags=display="Micro SDCard";storage;wipeingui;removable;backup=0
