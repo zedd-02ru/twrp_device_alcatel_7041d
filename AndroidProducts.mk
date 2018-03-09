@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    device/gionee/m2/omni_m2.mk 
+    device/alcatel/7041d/omni_7041d.mk 
