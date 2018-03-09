@@ -61,7 +61,9 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 # TWRP
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 TARGET_RECOVERY_FSTAB := device/alcatel/7041d/twrp.fstab
-
+#
+TW_DEFAULT_LANGUAGE := ru
+#
 TW_THEME := portrait_hdpi
 TARGET_SCREEN_HEIGHT := 854
 TARGET_SCREEN_WIDTH := 480
@@ -75,14 +77,20 @@ TW_INCLUDE_NTFS_3G := false
 TW_NO_EXFAT := true
 TW_NO_EXFAT_FUSE := true
 TW_INCLUDE_CRYPTO := false
+#W_SDEXT_DISABLE_EXT4 := true
 
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
-TW_NO_REBOOT_BOOTLOADER := true
+#W_NO_REBOOT_BOOTLOADER := true
 TW_BRIGHTNESS_PATH := /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness
 TW_MAX_BRIGHTNESS := 255
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
-TW_INTERNAL_STORAGE_PATH := "/sdcard"
-TW_INTERNAL_STORAGE_MOUNT_POINT := "Phone Storage"
+
+#TW_INTERNAL_STORAGE_PATH := "/sdcard"
+#TW_INTERNAL_STORAGE_MOUNT_POINT := "Phone Storage"
+
+TW_INTERNAL_STORAGE_PATH := "/data/media"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "Phone Soarge"
+
 TW_EXTERNAL_STORAGE_PATH := "/external_sd"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "Micro SDCard"
 TW_DEVICE_VERSION := uznaikaz
