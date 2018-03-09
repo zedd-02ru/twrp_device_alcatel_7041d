@@ -77,7 +77,7 @@ TW_INCLUDE_NTFS_3G := false
 TW_NO_EXFAT := true
 TW_NO_EXFAT_FUSE := true
 TW_INCLUDE_CRYPTO := false
-#W_SDEXT_DISABLE_EXT4 := true
+#TW_SDEXT_DISABLE_EXT4 := true
 
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 #W_NO_REBOOT_BOOTLOADER := true
@@ -96,6 +96,7 @@ TW_EXTERNAL_STORAGE_MOUNT_POINT := "Micro SDCard"
 TW_DEVICE_VERSION := uznaikaz
 
 # Usb
-TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun%d/file"
+#TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun%d/file"
+TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/mt_usb/musb-hdrc.0/gadget/lun%d/file"
 
 
