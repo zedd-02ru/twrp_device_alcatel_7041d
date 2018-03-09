@@ -28,14 +28,14 @@ TARGET_CPU_SMP := true
 TARGET_CPU_VARIANT := cortex-a7
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := mt6582
+TARGET_BOOTLOADER_BOARD_NAME := 7041D
 TARGET_USERIMAGES_USE_EXT4 := true
-TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
+#TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
 
 # Kernel
-BOARD_CUSTOM_BOOTIMG_MK := device/gionee/m2/MTKbootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/alcatel/7041d/MTKbootimg.mk
 BOARD_CUSTOM_BOOTIMG := true
-TARGET_PREBUILT_KERNEL := device/gionee/m2/kernel
+TARGET_PREBUILT_KERNEL := device/alcatel/7041d/prebuilt/kernel
 TARGET_KMODULES := true
 BOARD_KERNEL_CMDLINE := 
 BOARD_MKBOOTIMG_ARGS := --base 0x10000000 --pagesize 2048 --kernel_offset 0x00008000 --second_offset 0x00f00000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100
@@ -59,13 +59,23 @@ ADDITIONAL_DEFAULT_PROPERTIES += ro.mount.fs=EXT4
 BOARD_HAS_NO_SELECT_BUTTON := true
 
 # TWRP
-TARGET_RECOVERY_FSTAB := device/gionee/m2/twrp.fstab
+TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
+TARGET_RECOVERY_FSTAB := device/alcatel/7041d/twrp.fstab
+
 TW_THEME := portrait_hdpi
 TARGET_SCREEN_HEIGHT := 854
 TARGET_SCREEN_WIDTH := 480
-TW_INCLUDE_CRYPTO := true
 BOARD_HAS_LARGE_FILESYSTEM := true
+
 TW_NO_USB_STORAGE := true
+TW_EXCLUDE_MTP := false
+TW_EXCLUDE_SUPERSU := true
+TW_INCLUDE_CRYPTO := false
+TW_INCLUDE_NTFS_3G := false
+TW_NO_EXFAT := true
+TW_NO_EXFAT_FUSE := true
+TW_INCLUDE_CRYPTO := false
+
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TW_NO_REBOOT_BOOTLOADER := true
 TW_BRIGHTNESS_PATH := /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness
