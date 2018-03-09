@@ -14,9 +14,9 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/gionee/m2
+LOCAL_PATH := device/alcatel/7041d
 
-ifeq ($(TARGET_DEVICE),m2)
+ifeq ($(TARGET_DEVICE),7041d)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
