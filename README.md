@@ -3,6 +3,7 @@ TWRP BUILD TREE FOR ALCATEL OT-7041D. CHIPSET: MT6582
 KERNEL: PREBUILT KERNEL LINUX 3.4.5 / 4.2.2
 
 TWRP MINIMAL REPO:
+
 repo init --depth=1 -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-4.4
 
 repo sync -n -j 1 && repo sync -l -j 4
