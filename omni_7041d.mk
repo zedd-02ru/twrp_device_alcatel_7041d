@@ -22,8 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Copy Kernel
 PRODUCT_COPY_FILES += \
-    device/alcatel/7041d/prebuilt/kernel:kernel 
+    device/alcatel/7041d/prebuilt/kernel:kernel \
     bionic/libc/zoneinfo/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata
+
 # Device identifier. This must come after all inclusions
 PRODUCT_NAME := omni_7041d
 PRODUCT_DEVICE := 7041d
