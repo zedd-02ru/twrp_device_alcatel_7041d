@@ -16,5 +16,5 @@
 /cache		          ext4		/dev/block/mmcblk0p8     flags=display="Cache";backup=1;wipeingui;wipeduringfactoryreset
 /custpack		        ext4		/dev/block/mmcblk0p5     flags=display="Custpack";backup=1;wipeingui
 /data		            ext4		/dev/block/mmcblk0p9     flags=display="Data";backup=1;wipeingui;wipeduringfactoryreset;length=-16384
-#/sdcard1	          vfat		/dev/block/mmcblk0p9     flags=display="Phone Storage";storage;wipeingui;backup=0
-/sdcard0	          auto	        /dev/block/mmcblk1p1	 flags=display="Micro SDCard";storage;wipeingui;removable;backup=0
+/sdcard 	          vfat		/dev/block/mmcblk0p9     flags=display="Phone Storage";storage;wipeingui;backup=0
+/external_cd        auto	  /dev/block/mmcblk1p1     flags=display="Micro SDCard";storage;wipeingui;removable;backup=0
