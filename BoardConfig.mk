@@ -28,7 +28,7 @@ TARGET_CPU_SMP := true
 TARGET_CPU_VARIANT := cortex-a7
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := 7041D
+TARGET_BOOTLOADER_BOARD_NAME := "7041D"
 TARGET_USERIMAGES_USE_EXT4 := true
 #TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
 
@@ -68,7 +68,7 @@ TARGET_SCREEN_WIDTH := 480
 BOARD_HAS_LARGE_FILESYSTEM := true
 
 TW_NO_USB_STORAGE := true
-TW_EXCLUDE_MTP := false
+TW_INCLUDE_MTP := true
 TW_EXCLUDE_SUPERSU := true
 TW_INCLUDE_CRYPTO := false
 TW_INCLUDE_NTFS_3G := false
@@ -81,10 +81,11 @@ TW_NO_REBOOT_BOOTLOADER := true
 TW_BRIGHTNESS_PATH := /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness
 TW_MAX_BRIGHTNESS := 255
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
-TW_INTERNAL_STORAGE_PATH := "/sdcard1"
+TW_INTERNAL_STORAGE_PATH := "/sdcard"
 TW_INTERNAL_STORAGE_MOUNT_POINT := "Phone Storage"
-TW_EXTERNAL_STORAGE_PATH := "/sdcard0"
+TW_EXTERNAL_STORAGE_PATH := "/external_sd"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "Micro SDCard"
+TW_DEVICE_VERSION := uznaikaz
 
 # Usb
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun%d/file"
