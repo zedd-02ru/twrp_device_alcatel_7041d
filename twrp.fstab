@@ -19,4 +19,4 @@
 /preloader          emmc    /dev/preloader           flags=display="Preloader";backup=1
 
 /sdcard 	          vfat		/dev/block/mmcblk0p9     flags=display="Phone Storage";storage;wipeingui;backup=0
-/external_cd        auto	  /dev/block/mmcblk1p1     flags=display="Micro SDCard";storage;wipeingui;removable;backup=0
+/external_sd        auto	  /dev/block/mmcblk1p1     flags=display="Micro SDCard";storage;wipeingui;removable;backup=0
