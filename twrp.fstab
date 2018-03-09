@@ -6,7 +6,7 @@
 
 /boot               emmc    /dev/bootimg             flags=display="Boot";backup=1
 /logo               emmc    /dev/logo                flags=display="Logo";backup=1
-/misc               emmc    /dev/misc                flags=display="Misc";backup=0
+#/misc               emmc    /dev/misc                flags=display="Misc";backup=0
 /nvram              emmc    /dev/nvram               flags=display="Nvram";backup=1
 #/pro_info          emmc    /dev/pro_info            flags=display="Pro_info";backup=1
 /protect_f          emmc    /dev/protect_f           flags=display="Protect_f";backup=1
