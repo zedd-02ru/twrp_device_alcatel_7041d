@@ -14,7 +14,7 @@ $ cd TWRP
 
 $ source build/envsetup.sh 
 
-$ lunch omni_7041-userdebug 
+$ lunch omni_7041d-userdebug 
 
 $ make clean && make -j# recoveryimage
 #: no. of cpu core
