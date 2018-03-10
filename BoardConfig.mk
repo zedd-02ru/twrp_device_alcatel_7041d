@@ -85,15 +85,13 @@ TW_BRIGHTNESS_PATH := /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brigh
 TW_MAX_BRIGHTNESS := 255
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
 
-#TW_INTERNAL_STORAGE_PATH := "/sdcard"
-#TW_INTERNAL_STORAGE_MOUNT_POINT := "Phone Storage"
-
 TW_INTERNAL_STORAGE_PATH := "/data/media"
 TW_INTERNAL_STORAGE_MOUNT_POINT := "Phone Soarge"
 
 TW_EXTERNAL_STORAGE_PATH := "/external_sd"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "Micro SDCard"
 TW_DEVICE_VERSION := by uznaikaz
+#TWHAVE_SELINUX := true
 
 # Usb
 #TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun%d/file"
