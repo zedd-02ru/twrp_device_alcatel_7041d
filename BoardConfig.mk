@@ -93,7 +93,7 @@ TW_INTERNAL_STORAGE_MOUNT_POINT := "Phone Soarge"
 
 TW_EXTERNAL_STORAGE_PATH := "/external_sd"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "Micro SDCard"
-TW_DEVICE_VERSION := uznaikaz
+TW_DEVICE_VERSION := by uznaikaz
 
 # Usb
 #TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun%d/file"
